@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Page</title>
+
+<!-- Internal CSS -->
+<style>
+    /* Reset default margins and paddings */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    /* Navigation Bar */
+    nav {
+        background-color: #333;
+        padding: 10px 0;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 15px;
+    }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: background 0.3s;
+    }
+    nav ul li a:hover {
+        background-color: #555;
+    }
+
+    /* Profile Container */
+    .profile-container {
+        max-width: 900px;
+        margin: 30px auto;
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Profile Header */
+    .profile-header {
+        text-align: center;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 20px;
+    }
+    .profile-header img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #333;
+    }
+    .profile-header h1 {
+        margin-top: 15px;
+        font-size: 28px;
+        color: #222;
+    }
+    .profile-header p {
+        font-size: 16px;
+        color: #666;
+    }
+
+    /* Profile Content Layout */
+    .profile-content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    .profile-section {
+        flex: 1;
+        min-width: 250px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        margin: 10px;
+        border-radius: 6px;
+        background-color: #fafafa;
+    }
+    .profile-section h2 {
+        margin-bottom: 10px;
+        color: #444;
+        border-bottom: 2px solid #333;
+        padding-bottom: 5px;
+    }
+    .profile-section ul {
+        list-style: square inside;
+    }
+    .profile-section ul li {
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Profile Container -->
+<div class="profile-container">
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <img src="https://images.squarespace-cdn.com/content/v1/62f05096e769c660f906b4e3/771377d2-dee9-44a4-9443-50b42a718eb5/240409aLinkedInSample.jpg" 
+     alt="Professional profile photo" 
+     width="200">
+        <h1>Manthan Dhapke</h1>
+        <p>Web Developer | Designer | Tech Enthusiast</p>
+    </div>
+
+    <!-- Profile Content -->
+    <div class="profile-content">
+        <div class="profile-section">
+            <h2>About Me</h2>
+            <p>Hello! I am a passionate web developer with experience in creating responsive and user-friendly websites. I love coding, learning new technologies, and solving problems.</p>
+        </div>
+        <div class="profile-section">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5, CSS3, JavaScript</li>
+                <li>React & Node.js</li>
+                <li>Responsive Web Design</li>
+                <li>UI/UX Principles</li>
+            </ul>
+        </div>
+        <div class="profile-section">
+            <h2>Contact</h2>
+            <p>Email: Manthan Dhapke@example.com</p>
+            <p>Phone: +91 9876543210</p>
+            <p>Location: Nagpur, India</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
